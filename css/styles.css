@@ -93,7 +93,6 @@ ul, ol {
     padding-bottom: 24px;
     position: relative;
     overflow: hidden;
-    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -111,13 +110,14 @@ ul, ol {
     height: 4px;
     border-radius: 2px;
     background-color: #404bbf;
-}
-
-.link:hover::after,
-.link:focus::after{
-    background-color: #404bbf;
     width: 100%;
 }
+
+/* .link:hover::after,
+.link:focus::after{
+    background-color: #404bbf;
+
+} */
 
 /* --Menu-- */
 /* --Adress-- */
@@ -138,7 +138,6 @@ ul, ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    display: flex;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -418,11 +417,6 @@ ul, ol {
     overflow: hidden;
 }
 
-.div-overlay:hover .overlay,
-.div-overlay:focus .overlay{
-    transform: translateY(0%);
-}
-
 .overlay {
     position: absolute;
     top: 0;
@@ -446,8 +440,11 @@ ul, ol {
     
 }
 
-.four-page-list:hover,
-.four-page-list:focus {
+.four-page-list:hover .overlay {
+    transform: translateY(0%);    
+}
+
+.four-page-list:hover {
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
